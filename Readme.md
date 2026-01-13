@@ -18,12 +18,12 @@ The script reads a yaml file which is located in `$HOME/.config/games.yml`
 The available options are:
 ```yaml  
 [appid]:
-	gamemode: false # Wether to use gamemoderun, does nothing if gamemoderun not installed
-	prelaunch: ""   # If you want to use a prelaunch command e.g. mangohud, gamescope
-	flags: ""       # Any game specific flags you want, if a game for example has a flag called --skip-launcher you would add this here
-	env:            # Any environment variables you need, like PROTON_ENABLE_WAYLAND=1, WINE_CPU_TOPOLOGY="24:0,1,2..." , etc...
-		name1: value1
-		name2: value2
+  gamemode: false # Wether to use gamemoderun, does nothing if gamemoderun not installed
+  prelaunch: ""   # If you want to use a prelaunch command e.g. mangohud, gamescope
+  flags: ""       # Any game specific flags you want, if a game for example has a flag called --skip-launcher you would add this here
+  env:            # Any environment variables you need, like PROTON_ENABLE_WAYLAND=1, WINE_CPU_TOPOLOGY="24:0,1,2..." , etc...
+    name1: value1
+    name2: value2
 ```
 The appid is read either from the environment variable `SteamAppId`. Or taken from steams start command which includes AppId in the command
 
