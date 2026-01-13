@@ -47,7 +47,7 @@ def set_vars(_appid):
 
   # Enable Gamemode
   if "gamemode" in config[_appid] and config[_appid]["gamemode"] ==  True and which("gamemoderun") is not None:
-    launch_prelaunch = ["gamemoderun"]
+    launch_params["gamemode"] = ["gamemoderun"]
 
   # Set Game Flags
   if "flags" in config[_appid]:

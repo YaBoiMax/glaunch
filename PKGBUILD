@@ -1,3 +1,5 @@
+# Maintainer: YaBoiMax <51027149+YaBoiMax@users.noreply.github.com>
+
 pkgname=glaunch
 pkgver=1.1
 pkgrel=1
