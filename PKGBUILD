@@ -9,7 +9,7 @@ depends=(python python-yaml)
 provides=(glaunch)
 conflicts=(glaunch)
 makedepends=(git)
-optdepends=(gamemode)
+optdepends=('gamemode: gamemoderun support')
 source=("git+${url}.git")
 sha256sums=('SKIP')
 

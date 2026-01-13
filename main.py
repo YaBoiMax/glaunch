@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys, subprocess, os, yaml, re
 from pathlib import Path
+from shutil import which
 user_home=os.getenv('HOME')
 steam_env = os.environ.copy()
 config=False
@@ -45,7 +46,7 @@ def set_vars(_appid):
       steam_env[name]=str(value)
 
   # Enable Gamemode
-  if "gamemode" in config[_appid] and config[_appid]["gamemode"] ==  True:
+  if "gamemode" in config[_appid] and config[_appid]["gamemode"] ==  True and which("gamemoderun") is not None:
     launch_prelaunch = ["gamemoderun"]
 
   # Set Game Flags
